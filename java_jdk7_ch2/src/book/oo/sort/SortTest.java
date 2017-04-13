@@ -19,15 +19,22 @@ public class SortTest {
 		
 		System.out.print("排序前的数组：");
 		printIntArray(intArray);
-		ISortNumber test = new SelectionSort();
+		
+		/*ISortNumber test = new SelectionSort();
 		System.out.print("选择排序算法的排序结果：");
+		printIntArray(test.sortASC(intArray));*/
+		
+		/*
+		System.out.print("冒泡排序法排序结果：");
+		printIntArray(test.sortASC(intArray));*/
+		
+		/*ISortNumber test = new LinearInsertSort();
+		System.out.print("线性排序法的排序结果：");
+		printIntArray(test.sortASC(intArray));*/
+		ISortNumber test = new QuickSort();
+		System.out.print("快速排序算法的排序结果：");
 		printIntArray(test.sortASC(intArray));
 		
-		System.out.print("排序前的数组：");
-		printIntArray(intArray);
-		System.out.print("冒泡排序法排序结果：");
-		printIntArray(test.sortASC(intArray));
-
 	}
 
 }
